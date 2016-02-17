@@ -30,10 +30,3 @@ class PeopleDatabase
   end
 
 end
-
-p = PeopleDatabase.new
-p.add(first_name: "Tess", last_name: "Griffin", email: "tess@turing.io", state: "CO")
-p.add(first_name: "hi", last_name: "Griffin", email: "teasdss@turing.io", state: "CO")
-p.add(first_name: "there", last_name: "Griffin", email: "tess@asdturing.io", state: "AZ")
-
-p.email_csv
