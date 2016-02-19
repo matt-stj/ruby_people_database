@@ -12,13 +12,5 @@ class PeopleDatabaseTest < Minitest::Test
     pd.add({first_name: "Tess", last_name: "Griffin", email: "tess@turing.io", state: "CO"})
     assert_equal 1, pd.count
   end
-
-  def test_it_removes_a_person
-    pd.add({first_name: "Tess", last_name: "Griffin", email: "tess@turing.io", state: "CO"})
-    assert_equal 1, pd.count
-    asssert_equal "Tess", pd.first.first_name
-    pd.remove("tess@turing.io")
-    assert_equal 0, pd.count
-  end
 ​
 end
